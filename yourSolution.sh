@@ -1,1 +1,2 @@
-/bin/bash generateSecret.sh
+/bin/bash yourSolution.sh
+
