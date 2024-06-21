@@ -12,9 +12,9 @@ Initializes its environment and memory + Loads necessary libraries.
 
 Broken Symlink
 -------------------
-Binary 111111 is decimal 77.
-Binary 100100 is decimal 44.
-Binary 1011010110 is decimal 2222.
+111 = 7
+100 = 4
+10110 = 22
 
 
 
