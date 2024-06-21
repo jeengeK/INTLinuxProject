@@ -12,12 +12,15 @@ Initializes its environment and memory + Loads necessary libraries.
 
 Broken Symlink
 -------------------
-111 = 7
-100 = 4
-10110 = 22
+
 
 
 
 Binary Numbers
 --------------
-0 to 255
+q1:
+111 = 7
+100 = 4
+10110 = 22
+q2:
+0 to 2555
