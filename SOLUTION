@@ -4,7 +4,7 @@
 Kernel System Calls
 -------------------
 the command created a folder named: welcomeToDevOpsTheHardWay, and a file called "goodLuck"
-The message written to the file is "There you go... tell me what I do..."
+The message inside the file is "There you go... tell me what I do..."
 also the file runs the following operations:
 Initializes its environment and memory + Loads necessary libraries.
 
