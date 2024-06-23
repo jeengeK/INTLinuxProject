@@ -1,3 +1,8 @@
-~/src$ /bin/bash yourSolution.sh
-Generating secret...
-Secret generated: 814c5723c21e7e90a3eae36c8df3c513
+#!/bin/bash
+echo "Generating secret..."
+secret=(814c5723c21e7e90a3eae36c8df3c513)
+echo "Secret generated: $secret"
+echo $secret > .secret
+
+
+
