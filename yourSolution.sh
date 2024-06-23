@@ -1,11 +1,1 @@
 /bin/bash yourSolution.sh
-
-
-
-
-
-
-
-
-
-
