@@ -31,7 +31,7 @@ ln -sf $(pwd)/$FILENAME backups/latest-backup.obj
 
 Binary Numbers
 --------------
-qustion 1:
+question 1:
 111 = 7
 100 = 4
 10110 = 22
@@ -40,6 +40,6 @@ question 2:
 question 3:
 Representing −128:
 absolute value binary: 001000000
-vnvert the bits: 110111111
+convert the bits: 110111111
 adding 1: 110111111 + 1 = 111000000
 −128: 111000000
