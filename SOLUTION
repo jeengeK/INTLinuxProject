@@ -12,19 +12,32 @@ Initializes its environment and memory + Loads necessary libraries.
 
 Broken Symlink
 -------------------
+the problem here the symbolic link "latest-backup.obj" has been created on the current directory is a relative link to the backup file. When you move this link to the backups directory, the relative path in the symbolic link is still pointing to the original location relative to where it has been created, which can lead to the link pointing to a non-existent file or an incorrect file.
+To fix this, we must verify that the symbolic link is correctly updated or recreated to point to the latest backup file from its new location. 
+Here’s how we can correct the bug in the code:
+open terminal ubuntu:
 
+#!/bin/bash
+# Create the backups directory if it doesn't exist
+mkdir -p backups
+# Create the daily backup file
+FILENAME=backup-$(date +"%Y-%m-%d").obj
+touch $FILENAME
+echo "backup data..." >> $FILENAME
+# Create or update the symbolic link in the backups directory with the absolute path
+ln -sf $(pwd)/$FILENAME backups/latest-backup.obj
 
 
 
 Binary Numbers
 --------------
-q1:
+qustion 1:
 111 = 7
 100 = 4
 10110 = 22
-q2:
+question 2:
 0 to 255
-q3:
+question 3:
 Representing −128:
 absolute value binary: 001000000
 vnvert the bits: 110111111
