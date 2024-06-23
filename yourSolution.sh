@@ -1,1 +1,3 @@
-/bin/bash yourSolution.sh
+~/src$ /bin/bash yourSolution.sh
+Generating secret...
+Secret generated: 814c5723c21e7e90a3eae36c8df3c513
