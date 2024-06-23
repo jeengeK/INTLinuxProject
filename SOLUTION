@@ -12,11 +12,11 @@ Initializes its environment and memory + Loads necessary libraries.
 
 Broken Symlink
 -------------------
-the problem here the symbolic link "latest-backup.obj" has been created on the current directory is a relative link to the backup file. When you move this link to the backups directory, the relative path in the symbolic link is still pointing to the original location relative to where it has been created, which can lead to the link pointing to a non-existent file or an incorrect file.
+the problem here the symbolic link "latest-backup.obj" has been created on the current directory is a relative link to the backup file. 
+When you move this link to the backups directory, the relative path in the symbolic link is still pointing to the original location relative to where it has been created, which can lead us to the link pointing to a non-existing file or an incorrect file.
 To fix this, we must verify that the symbolic link is correctly updated or recreated to point to the latest backup file from its new location. 
 Here’s how we can correct the bug in the code:
 open terminal ubuntu:
-
 #!/bin/bash
 # Create the backups directory if it doesn't exist
 mkdir -p backups
