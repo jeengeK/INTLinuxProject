@@ -4,7 +4,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 set -x  # Print commands and their arguments as they are executed
 
 # Ensure the secretDir directory exists
-cd src
+#cd src
 mkdir -p secretDir
 touch secretDir/.secret
 chmod 600 secretDir/.secret
