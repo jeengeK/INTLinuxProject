@@ -45,3 +45,24 @@ absolute value binary: 001000000
 convert the bits: 110111111
 adding 1: 110111111 + 1 = 111000000
 −128: 111000000
+
+question 4:
+method for converting 0.2 to 8-bit floating point
+1. Convert to Binary:
+0.2100.2_{10}0.210​ approximates to 0.001100110011...0.001100110011...0.001100110011....
+2. Normalize the Number:
+Normalize 0.001100110011...0.001100110011...0.001100110011... to 1.100110011×2−31.100110011 \times 2^{-3}1.100110011×2−3.
+3. Sign Bit:
+The number is positive, so S=0S = 0S=0.
+4. Exponent:
+Exponent n=−3n = -3n=−3.
+Add bias: E=−3+7=4E = -3 + 7 = 4E=−3+7=4.
+In binary, 4 is 010001000100.
+5. Mantissa:
+The fractional part after normalization is 100110011...100110011...100110011....
+Take the first 3 bits: 100100100.
+6. Combine All Parts:
+Sign bit: 000
+Exponent: 010001000100
+Mantissa: 100100100
+for summarize: the representation of 12.3 will be 01010100
